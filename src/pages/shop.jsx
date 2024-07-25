@@ -1,6 +1,6 @@
 import React from "react";
-import NavBar from "../src/components/navbar/navbar";
-import Footer from "../src/components/footer/footer";
+import NavBar from "../components/navbar/navbar.jsx";
+import Footer from "../components/footer/footer.jsx";
 
 function Shop() {
   return (

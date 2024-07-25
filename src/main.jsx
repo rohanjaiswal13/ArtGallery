@@ -3,9 +3,9 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import Shop from "../pages/shop.jsx";
-import Cart from "../pages/cart.jsx";
-import Home from "../pages/home.jsx";
+import Shop from "../src/pages/shop.jsx";
+import Cart from "../src/pages/cart.jsx";
+import Home from "../src/pages/home.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
