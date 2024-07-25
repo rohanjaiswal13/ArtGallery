@@ -4,7 +4,20 @@ nav{
 }
 
 .navbar-brand{
-    margin-left: 5%;
+    margin-left: 8%;
     font-size: x-large !important;
     font-weight: 500;
+}
+
+.nav-link{
+    font-weight: 600!important;
+    font-size: large!important;
+}
+
+.navbar-nav{
+    margin-right: 8%;
+}
+
+.mr{
+    margin-right: 48px;
 }
