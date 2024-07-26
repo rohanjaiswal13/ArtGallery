@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Shop from "../src/pages/shop.jsx";
 import Cart from "../src/pages/cart.jsx";
-import Home from "../src/pages/home.jsx";
+import Home from "../src/pages/home/home.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
     path: "home",
     element: (
       <div>
-        <Home />
+        <App />
       </div>
     ),
   },
