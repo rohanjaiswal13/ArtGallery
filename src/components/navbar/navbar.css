@@ -22,7 +22,10 @@ nav{
     margin-right: 48px;
 }
 
-.search{
-    width: 70vh!important;
-    margin-left: 50%!important;
+.search {
+    margin-right: 30vh;
+}
+
+.width{
+    width: 60vh!important;
 }
