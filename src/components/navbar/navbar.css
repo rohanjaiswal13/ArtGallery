@@ -21,3 +21,8 @@ nav{
 .mr{
     margin-right: 48px;
 }
+
+.search{
+    width: 70vh!important;
+    margin-left: 50%!important;
+}
