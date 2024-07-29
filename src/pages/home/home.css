@@ -1,8 +1,25 @@
+.carousel-inner {
+  max-width: 100%;
+  height: 600px; /* Set a specific height for the carousel images */
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This property ensures the images cover the container while maintaining aspect ratio */
+}
+
 .card-section {
   display: flex;
   min-height: 50vh;
+  margin-top: 20px;
   justify-content: center;
   flex-direction: column;
+}
+
+.card {
+  margin-top: 20px;
 }
 
 .title {

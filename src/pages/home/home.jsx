@@ -3,6 +3,11 @@ import "./home.css";
 import car1 from "../../assets/images/car1.jpg";
 import car2 from "../../assets/images/car2.jpg";
 import car3 from "../../assets/images/car3.jpg";
+import img1 from "../../assets/images/img1.jpg";
+import img2 from "../../assets/images/img2.jpg";
+import img3 from "../../assets/images/img3.jpg";
+import img4 from "../../assets/images/img4.jpg";
+
 const Home = () => {
   return (
     <>
@@ -40,7 +45,7 @@ const Home = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src={car2} className="d-block w-100" alt="..." />
+            <img src={img3} className="d-block w-100" alt="..." />
             <div className="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>
@@ -89,7 +94,7 @@ const Home = () => {
         <div className="row">
           <div className="col-md-4">
             <div className="card">
-              <img className="card-img-top" src="..." alt="Card image cap" />
+              <img className="card-img-top" src={img3} alt="Card image cap" />
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">
@@ -105,7 +110,7 @@ const Home = () => {
           </div>
           <div className="col-md-4">
             <div className="card">
-              <img className="card-img-top" src="..." alt="Card image cap" />
+              <img className="card-img-top" src={img2} alt="Card image cap" />
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">
@@ -120,7 +125,7 @@ const Home = () => {
           </div>
           <div className="col-md-4">
             <div className="card">
-              <img className="card-img-top" src="..." alt="Card image cap" />
+              <img className="card-img-top" src={img1} alt="Card image cap" />
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">
@@ -136,7 +141,7 @@ const Home = () => {
           </div>
           <div>
             <div className="card">
-              <img className="card-img-top" src="..." alt="Card image cap" />
+              <img className="card-img-top" src={img4} alt="Card image cap" />
               <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">
