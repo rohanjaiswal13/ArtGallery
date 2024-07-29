@@ -7,6 +7,7 @@ import img1 from "../../assets/images/img1.jpg";
 import img2 from "../../assets/images/img2.jpg";
 import img3 from "../../assets/images/img3.jpg";
 import img4 from "../../assets/images/img4.jpg";
+import Gallery from "../../gallery/gallery";
 
 const Home = () => {
   return (
@@ -157,46 +158,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="gallery">
-        <div className="row">
-          <div className="col-lg-4 col-md-12 mb-4 mb-lg-0">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-              className="w-100 shadow-1-strong rounded mb-4"
-              alt="Boat on Calm Water"
-            />
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-              className="w-100 shadow-1-strong rounded mb-4"
-              alt="Wintry Mountain Landscape"
-            />
-          </div>
-          <div className="col-lg-4 mb-4 mb-lg-0">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-              className="w-100 shadow-1-strong rounded mb-4"
-              alt="Mountains in the Clouds"
-            />
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-              className="w-100 shadow-1-strong rounded mb-4"
-              alt="Boat on Calm Water"
-            />
-          </div>
-          <div className="col-lg-4 mb-4 mb-lg-0">
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-              className="w-100 shadow-1-strong rounded mb-4"
-              alt="Waves at Sea"
-            />
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-              className="w-100 shadow-1-strong rounded mb-4"
-              alt="Yosemite National Park"
-            />
-          </div>
-        </div>
-      </div>
+      <Gallery />
     </>
   );
 };
