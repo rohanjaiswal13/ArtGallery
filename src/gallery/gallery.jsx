@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./gallery.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import car1 from "../assets/images/car1.jpg";
 import car2 from "../assets/images/car2.jpg";
@@ -24,11 +23,11 @@ const Gallery = () => {
     { src: img2, category: "spray" },
     { src: img3, category: "irrigation" },
     { src: img4, category: "spray" },
-    { src: img1, category: "irrigation" },
-    { src: car1, category: "irrigation" },
-    { src: car2, category: "hdpe" },
+    { src: img2, category: "irrigation" },
+    { src: img3, category: "irrigation" },
+    { src: img1, category: "hdpe" },
     { src: car3, category: "spray" },
-    { src: img4, category: "sprinkle" },
+    { src: car1, category: "sprinkle" },
   ];
 
   const filteredImages =
@@ -42,7 +41,7 @@ const Gallery = () => {
         <div className="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <h1 className="gallery-title">Gallery</h1>
         </div>
-        <div align="center">
+        <div className="col-12 text-center">
           <button
             className={`btn btn-default filter-button ${
               filter === "all" ? "active" : ""
@@ -90,14 +89,16 @@ const Gallery = () => {
           </button>
         </div>
         <br />
-        {filteredImages.map((image, index) => (
-          <div
-            key={index}
-            className={`gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter ${image.category}`}
-          >
-            <img src={image.src} className="img-responsive" alt="Gallery" />
-          </div>
-        ))}
+        <div className="row">
+          {filteredImages.map((image, index) => (
+            <div
+              key={index}
+              className={`gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-12 filter ${image.category}`}
+            >
+              <img src={image.src} className="img-responsive" alt="Gallery" />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
