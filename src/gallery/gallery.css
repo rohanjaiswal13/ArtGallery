@@ -1,6 +1,6 @@
 .gallery-title {
   font-size: 36px;
-  color: #000000;
+  color: #000000; /* Changed green to black */
   text-align: center;
   font-weight: 500;
   margin-bottom: 70px;
@@ -18,10 +18,10 @@
 
 .filter-button {
   font-size: 18px;
-  border: 1px solid #000000;
+  border: 1px solid #000000; /* Changed green to black */
   border-radius: 5px;
   text-align: center;
-  color: #000000;
+  color: #000000; /* Changed green to black */
   margin-bottom: 30px;
   margin-right: 10px;
   margin: 5px;
@@ -29,29 +29,38 @@
 
 .filter-button:hover {
   font-size: 18px;
-  border: 1px solid #000000;
+  border: 1px solid #000000; /* Changed green to black */
   border-radius: 5px;
   text-align: center;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #000000; /* Changed green to black */
 }
 
 .btn-default:active .filter-button:active {
-  background-color: #42b32f;
+  background-color: #000000; /* Changed green to black */
   color: white;
-}
-
-.port-image {
-  width: 100%;
-  height: 200px; /* Set the desired height */
-  object-fit: cover; /* Maintain aspect ratio and fill the container */
 }
 
 .gallery_product {
   margin-bottom: 30px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
-.active {
-  background-color: #007bff;
-  color: white;
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.filter {
+  display: none;
+}
+
+.filter.show {
+  display: block;
+}
+
+.active.filter-button {
+  background-color: #ff6347 !important; /* Set a different color for active button */
+  color: white !important;
 }

@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./gallery.css"
 import car1 from "../assets/images/car1.jpg";
 import car2 from "../assets/images/car2.jpg";
 import car3 from "../assets/images/car3.jpg";
@@ -8,9 +7,22 @@ import img1 from "../assets/images/img1.jpg";
 import img2 from "../assets/images/img2.jpg";
 import img3 from "../assets/images/img3.jpg";
 import img4 from "../assets/images/img4.jpg";
+import "./gallery.css";
 
 const Gallery = () => {
   const [filter, setFilter] = useState("all");
+  const [filteredImages, setFilteredImages] = useState([]);
+
+  useEffect(() => {
+    if (filter === "all") {
+      setFilteredImages(images.map(img => ({ ...img, show: true })));
+    } else {
+      setFilteredImages(images.map(img => ({
+        ...img,
+        show: img.category === filter,
+      })));
+    }
+  }, [filter]);
 
   const handleFilterChange = (value) => {
     setFilter(value);
@@ -31,11 +43,6 @@ const Gallery = () => {
     { src: car1, category: "sprinkle" },
   ];
 
-  const filteredImages =
-    filter === "all"
-      ? images
-      : images.filter((image) => image.category === filter);
-
   return (
     <div className="container">
       <div className="row">
@@ -48,7 +55,6 @@ const Gallery = () => {
               filter === "all" ? "active" : ""
             }`}
             onClick={() => handleFilterChange("all")}
-            data-filter="all"
           >
             All
           </button>
@@ -57,7 +63,6 @@ const Gallery = () => {
               filter === "hdpe" ? "active" : ""
             }`}
             onClick={() => handleFilterChange("hdpe")}
-            data-filter="hdpe"
           >
             HDPE Pipes
           </button>
@@ -66,7 +71,6 @@ const Gallery = () => {
               filter === "sprinkle" ? "active" : ""
             }`}
             onClick={() => handleFilterChange("sprinkle")}
-            data-filter="sprinkle"
           >
             Sprinkle Pipes
           </button>
@@ -75,7 +79,6 @@ const Gallery = () => {
               filter === "spray" ? "active" : ""
             }`}
             onClick={() => handleFilterChange("spray")}
-            data-filter="spray"
           >
             Spray Nozzle
           </button>
@@ -84,7 +87,6 @@ const Gallery = () => {
               filter === "irrigation" ? "active" : ""
             }`}
             onClick={() => handleFilterChange("irrigation")}
-            data-filter="irrigation"
           >
             Irrigation Pipes
           </button>
@@ -94,9 +96,9 @@ const Gallery = () => {
           {filteredImages.map((image, index) => (
             <div
               key={index}
-              className={`gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-12 filter ${image.category}`}
+              className={`gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-12 filter ${image.show ? "show" : ""}`}
             >
-              <img src={image.src} className="img-responsive port-image" alt="Gallery" />
+              <img src={image.src} className="img-responsive gallery-image" alt="Gallery" />
             </div>
           ))}
         </div>
