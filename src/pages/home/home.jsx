@@ -1,7 +1,6 @@
 import React from "react";
 import "./home.css";
 import car1 from "../../assets/images/car1.jpg";
-import car2 from "../../assets/images/car2.jpg";
 import car3 from "../../assets/images/car3.jpg";
 import img1 from "../../assets/images/img1.jpg";
 import img2 from "../../assets/images/img2.jpg";
@@ -90,69 +89,66 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="card-section">
-        <h1 className="title">Featured</h1>
-        <div className="row">
-          <div className="col-md-4">
-            <div className="card">
-              <img className="card-img-top" src={img3} alt="Card image cap" />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
+      <div className="container">
+        <div className="card-section">
+          <h1 className="title mx-auto">Featured</h1>
+          <div className="row">
+            <div className="col-md-4 mb-3">
+              <div className="card">
+                <img className="card-img-top" src={img3} alt="Card image cap" />
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                  </p>
+                </div>
+                <div className="card-footer">
+                  <small className="text-muted">Last updated 3 mins ago</small>
+                </div>
               </div>
-              <div className="card-footer">
-                <small className="text-muted">Last updated 3 mins ago</small>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="card">
+                <img className="card-img-top" src={img2} alt="Card image cap" />
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">
+                    This card has supporting text below as a natural lead-in to additional content.
+                  </p>
+                </div>
+                <div className="card-footer">
+                  <small className="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 mb-3">
+              <div className="card">
+                <img className="card-img-top" src={img1} alt="Card image cap" />
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+                  </p>
+                </div>
+                <div className="card-footer">
+                  <small className="text-muted">Last updated 3 mins ago</small>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-md-4">
-            <div className="card">
-              <img className="card-img-top" src={img2} alt="Card image cap" />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  This card has supporting text below as a natural lead-in to
-                  additional content.
-                </p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4">
-            <div className="card">
-              <img className="card-img-top" src={img1} alt="Card image cap" />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  This is a wideral lead-in to additional content. This card has
-                  even longer content than the first to show that equal height
-                  action.
-                </p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="card">
-              <img className="card-img-top" src={img4} alt="Card image cap" />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  This is a wideral lead-in to additional content. This card has
-                  even longer content than the first to show that equal height
-                  action.
-                </p>
-              </div>
-              <div className="card-footer">
-                <small className="text-muted">Last updated 3 mins ago</small>
+          <div className="row">
+            <div className="col-md-12 mb-3">
+              <div className="card equal-width">
+                <img className="card-img-top" src={img4} alt="Card image cap" />
+                <div className="card-body">
+                  <h5 className="card-title">Card title</h5>
+                  <p className="card-text">
+                    This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+                  </p>
+                </div>
+                <div className="card-footer">
+                  <small className="text-muted">Last updated 3 mins ago</small>
+                </div>
               </div>
             </div>
           </div>

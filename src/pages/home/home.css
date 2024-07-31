@@ -18,14 +18,40 @@
   flex-direction: column;
 }
 
-.card {
-  margin-top: 20px;
-}
-
 .title {
   margin-bottom: 3%;
 }
 
 .gallery {
   margin-top: 5%;
+}
+
+/* Ensures the card images cover the card width and maintain aspect ratio */
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Set a consistent height for all images */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Makes sure that cards have equal height */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-body {
+  flex: 1;
+}
+
+.card-footer {
+  text-align: center;
+}
+
+.equal-width {
+  width: 100%;
+}
+
+.row {
+  display: flex;
 }
