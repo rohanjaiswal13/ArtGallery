@@ -5,7 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import Shop from "../src/pages/shop.jsx";
 import Cart from "../src/pages/cart.jsx";
-import Home from "../src/pages/home/home.jsx";
+import AboutUs from "./pages/about/aboutus.jsx";
+import Blog from "./pages/blog/blog.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -31,6 +32,22 @@ const router = createBrowserRouter([
     element: (
       <div>
         <Cart />
+      </div>
+    ),
+  },
+  {
+    path: "aboutus",
+    element: (
+      <div>
+        <AboutUs />
+      </div>
+    ),
+  },
+  {
+    path: "blog",
+    element: (
+      <div>
+        <Blog />
       </div>
     ),
   },
