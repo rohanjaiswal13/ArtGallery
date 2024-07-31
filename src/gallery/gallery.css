@@ -4,6 +4,7 @@
   text-align: center;
   font-weight: 500;
   margin-bottom: 70px;
+  position: relative;
 }
 
 .gallery-title:after {
@@ -22,7 +23,7 @@
   text-align: center;
   color: #000000;
   margin-bottom: 30px;
-  margin-right: 10px; /* Add margin to the right */
+  margin-right: 10px;
   margin: 5px;
 }
 
@@ -42,16 +43,12 @@
 
 .port-image {
   width: 100%;
+  height: 200px; /* Set the desired height */
+  object-fit: cover; /* Maintain aspect ratio and fill the container */
 }
 
 .gallery_product {
   margin-bottom: 30px;
-}
-
-.gallery_product img {
-  width: 100%;
-  height: 200px; /* Set the desired height */
-  object-fit: cover; /* Maintain aspect ratio and fill the container */
 }
 
 .active {

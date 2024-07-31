@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./gallery.css"
 import car1 from "../assets/images/car1.jpg";
 import car2 from "../assets/images/car2.jpg";
 import car3 from "../assets/images/car3.jpg";
@@ -95,7 +96,7 @@ const Gallery = () => {
               key={index}
               className={`gallery_product col-lg-4 col-md-4 col-sm-6 col-xs-12 filter ${image.category}`}
             >
-              <img src={image.src} className="img-responsive" alt="Gallery" />
+              <img src={image.src} className="img-responsive port-image" alt="Gallery" />
             </div>
           ))}
         </div>
