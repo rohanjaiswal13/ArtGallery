@@ -1,13 +1,19 @@
 .carousel-inner {
   max-width: 100%;
-  height: 600px; /* Set a specific height for the carousel images */
+  height: 50%; /* Set a specific height for the carousel images */
   overflow: hidden;
 }
 
+.carousel-caption h1{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 60px
+}
+
 .carousel-inner img {
-  width: 100%;
+  width: 96%;
   height: 100%;
-  object-fit: cover; /* This property ensures the images cover the container while maintaining aspect ratio */
+  object-fit: cover;
+  margin: auto;
 }
 
 .card-section {
@@ -32,6 +38,11 @@
   height: 200px; /* Set a consistent height for all images */
   object-fit: cover; /* Ensures the image covers the area without distortion */
 }
+.card-img-bottom {
+  width: 100%;
+  height: 300px; /* Set a consistent height for all images */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
 
 /* Makes sure that cards have equal height */
 .card {
@@ -49,9 +60,21 @@
 }
 
 .equal-width {
-  width: 100%;
+  width: 100%;  
 }
 
 .row {
   display: flex;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 1vh!important;
+  height: 1vh!important;
+  border-radius: 50%;
+}
+.carousel-indicators{
+  position: absolute;
+  left: 80%!important;
+  display: flex;
+  flex-direction: column;
 }

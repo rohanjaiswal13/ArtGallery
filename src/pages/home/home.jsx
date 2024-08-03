@@ -36,27 +36,27 @@ const Home = () => {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img src={car1} className="d-block w-100" alt="..." />
+            <img src={car1} className="d-block" alt="..." />
             <div className="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
+              <h1>First slide label</h1>
               <p>
                 Some representative placeholder content for the first slide.
               </p>
             </div>
           </div>
           <div className="carousel-item">
-            <img src={img3} className="d-block w-100" alt="..." />
+            <img src={img3} className="d-block" alt="..." />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
+              <h1>Second slide label</h1>
               <p>
                 Some representative placeholder content for the second slide.
               </p>
             </div>
           </div>
           <div className="carousel-item">
-            <img src={car3} className="d-block w-100" alt="..." />
+            <img src={car3} className="d-block" alt="..." />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
+              <h1>Third slide label</h1>
               <p>
                 Some representative placeholder content for the third slide.
               </p>
@@ -99,7 +99,7 @@ const Home = () => {
                 <div className="card-body">
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                    This is a wider card with additional content. This content is a little bit longer.
                   </p>
                 </div>
                 <div className="card-footer">
@@ -127,7 +127,7 @@ const Home = () => {
                 <div className="card-body">
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">
-                    This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+                    This card has even longer content than the first to show that equal height action.
                   </p>
                 </div>
                 <div className="card-footer">
@@ -139,7 +139,7 @@ const Home = () => {
           <div className="row">
             <div className="col-md-12 mb-3">
               <div className="card equal-width">
-                <img className="card-img-top" src={img4} alt="Card image cap" />
+                <img className="card-img-bottom" src={img4} alt="Card image cap" />
                 <div className="card-body">
                   <h5 className="card-title">Card title</h5>
                   <p className="card-text">
