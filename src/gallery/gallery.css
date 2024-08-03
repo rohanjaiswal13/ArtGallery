@@ -61,6 +61,6 @@
 }
 
 .active.filter-button {
-  background-color: #ff6347 !important; /* Set a different color for active button */
+  background-color: #000000 !important; /* Set a different color for active button */
   color: white !important;
 }
