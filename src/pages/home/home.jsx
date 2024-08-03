@@ -154,7 +154,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <hr></hr>
       <Gallery />
+      <hr></hr>
     </>
   );
 };
