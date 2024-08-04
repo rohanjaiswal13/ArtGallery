@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-import Shop from "../src/pages/shop.jsx";
-import Cart from "../src/pages/cart.jsx";
+import Shop from "./pages/shop/shop.jsx"
+import Cart from "../src/pages/cart/cart.jsx";
 import AboutUs from "./pages/about/aboutus.jsx";
 import Blog from "./pages/blog/blog.jsx";
 
