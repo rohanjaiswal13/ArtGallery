@@ -1,15 +1,38 @@
-import React from "react";
-import NavBar from "../../components/navbar/navbar.jsx";
-import Footer from "../../components/footer/footer.jsx";
+import { Col, Container, Row } from "react-bootstrap";
+import FilterSelect from "../../components/FilterSelect"
+import SearchBar from "../../components/SearchBar/SearchBar";
+import { Fragment, useState } from "react";
+import { products } from "../../assets/prods/products";
+import ShopList from "../../components/ShopList";
+import Banner from "../../components/Banner/Banner";
+import useWindowScrollToTop from "../../hooks/useWindowScrollToTop";
 
-function Shop() {
-  return (
-    <div>
-      <NavBar />
-      <div>Shop Page</div>
-      <Footer />
-    </div>
+const Shop = () => {
+  const [filterList, setFilterList] = useState(
+    products.filter((item) => item.category === "sofa")
   );
-}
+  useWindowScrollToTop();
+
+  return (
+    <Fragment>
+      <Banner title="product" />
+      <section className="filter-bar">
+        <Container className="filter-bar-contianer">
+          <Row className="justify-content-center">
+            <Col md={4}>
+              <FilterSelect setFilterList={setFilterList} />
+            </Col>
+            <Col md={8}>
+              <SearchBar setFilterList={setFilterList} />
+            </Col>
+          </Row>
+        </Container>
+        <Container>
+          <ShopList productItems={filterList} />
+        </Container>
+      </section>
+    </Fragment>
+  );
+};
 
 export default Shop;
